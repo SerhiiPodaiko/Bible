@@ -31,6 +31,7 @@
       "@constants/*": ["constants/*"],
       "@context/*": ["context/*"],
       "@utils/*": ["utils/*"],
+      "@dictionaries/*": ["dictionaries/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
