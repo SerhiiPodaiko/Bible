@@ -1,11 +1,51 @@
-@import "reset";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-weight: 400;
   font-size: 16px;
+  background: #047E6E;
+}
+
+body.green {
+  background: #047E6E;
+  color: white;
+}
+
+body.white {
+  background: white;
+  color: black;
+}
+
+/* Для Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Для вебкіт-браузерів (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #047E6E;
+}
+
+::-webkit-scrollbar-thumb {
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  width: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #047E6E;
 }

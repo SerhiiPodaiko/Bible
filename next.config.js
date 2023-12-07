@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
 
-// const withNextIntl = require('next-intl/plugin')('./i18n.config.ts')
-
 const nextConfig = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -30,8 +28,6 @@ const nextConfig = {
       // }
     ],
   },
-
-  // Internationalization
 }
 
 module.exports = nextConfig
