@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className='fixed top-0 right-0 left-0 w-full flex items-center justify-between py-4 px-[20px] lg:px-20 bg-[#63A59B] '>
       <div className='flex items-center gap-3'>
-        <Link href={PAGE_SLUGS.home}>
+        <Link href={PAGE_SLUGS.home} title='Лого'>
           <LogoSvg />
         </Link>
         <h1 className='text-[20px] duration-300 hover:text-[#FEBF11]'>Тут шукають Бога</h1>
