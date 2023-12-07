@@ -34,17 +34,17 @@ export default function CookieBanner() {
       <div className='text-center'>
         <Link href='/info/cookies'>
           <p>
-            We use <span className='font-bold text-sky-400'>cookies</span> on our site.
+            Ми використовуємо файли <span className='font-bold text-sky-400'>cookies</span> на нашому сайті.
           </p>
         </Link>
       </div>
 
       <div className='flex gap-2'>
         <button className='px-5 py-2 text-gray-300 rounded-md border-gray-900' onClick={() => setCookieConsent(false)}>
-          Decline
+          Відхилити
         </button>
         <button className='bg-gray-900 px-5 py-2 text-white rounded-lg' onClick={() => setCookieConsent(true)}>
-          Allow Cookies
+          Дозволити
         </button>
       </div>
     </div>
