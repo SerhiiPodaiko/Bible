@@ -4,7 +4,7 @@ import { Montserrat } from 'next/font/google'
 
 import CookieBanner from '@components/CookieBanner'
 import GoogleAnalytics from '@components/GoogleAnalytics'
-import Header from '@components/Header/Header'
+import Header from '@public/Header/Header'
 import '@styles/globals.scss'
 
 // Fonts
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <GoogleAnalytics GA_MEASUREMENT_ID={'G-N3DSNYXS69'} />
       <body className={cn(font.className, 'green')}>
         <Header />
-        <main className='lg:px-20 md:px-14 px-[20px] py-5'>{children}</main>
+        <main className='lg:px-20 md:px-14 px-[20px] py-[80px]'>{children}</main>
         <CookieBanner />
       </body>
     </html>

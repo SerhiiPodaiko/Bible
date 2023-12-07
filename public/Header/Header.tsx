@@ -5,11 +5,11 @@ import { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
 import GlobalSearch from '@components/GlobalSearch/GlobalSearch'
-import Navigation from '@components/Navigation/Navigation'
 import { PAGE_SLUGS } from '@constants/pages'
 import LogoSvg from '@public/icons/logo.svg'
 import MenuCloseSvg from '@public/icons/menu-close.svg'
 import MenuSvg from '@public/icons/menu.svg'
+import Navigation from './components/Navigation'
 
 const Header = () => {
   const [menuStatus, setMenuStatus] = useState<boolean>(false)
