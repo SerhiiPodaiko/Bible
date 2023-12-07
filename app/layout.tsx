@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='uk'>
+      <GoogleAnalytics GA_MEASUREMENT_ID={'G-N3DSNYXS69'} />
       <body className={cn(font.className, 'green')}>
         <Header />
         <main className='lg:px-20 md:px-14 px-[20px] py-5'>{children}</main>
         <CookieBanner />
       </body>
-      <GoogleAnalytics GA_MEASUREMENT_ID={'G-N3DSNYXS69'} />
     </html>
   )
 }
