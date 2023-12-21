@@ -1,5 +1,5 @@
 'use client'
-import NotFoundImage from '@public/images/404.avif'
+import NotFoundImage from '@public/images/404/404.avif'
 import Image from 'next/image'
 import { useEffect } from 'react'
 

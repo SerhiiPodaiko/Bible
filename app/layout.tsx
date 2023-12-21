@@ -4,7 +4,7 @@ import { Montserrat } from 'next/font/google'
 
 import CookieBanner from '@components/CookieBanner'
 import GoogleAnalytics from '@components/GoogleAnalytics'
-import Header from '@public/Header/Header'
+import Header from '@components/Header/Header'
 import '@styles/globals.scss'
 
 // Fonts

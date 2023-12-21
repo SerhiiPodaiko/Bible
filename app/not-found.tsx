@@ -1,5 +1,5 @@
 import { PAGE_SLUGS } from '@constants/pages'
-import NotFoundImage from '@public/images/404.avif'
+import NotFoundImage from '@public/images/404/404.avif'
 import Image from 'next/image'
 import Link from 'next/link'
 
