@@ -3,6 +3,8 @@ export const PAGE_SLUGS = {
 
   gallery: '/gallery',
 
+  films: '/films',
+
   // Not-Found
   notFound: '*',
 }

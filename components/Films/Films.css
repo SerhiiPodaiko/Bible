@@ -1,0 +1,12 @@
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    transition: width .3s ease;
+}
+
+li:hover {
+    width: 400px!important;
+}
