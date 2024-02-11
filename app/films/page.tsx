@@ -1,4 +1,4 @@
-import Films from '@components/Films/Films'
+import Films from '@pages/Films/Films'
 
 const FilmsPage = () => <Films />
 

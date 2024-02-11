@@ -15,7 +15,7 @@ import GalleryImageFour from '@public/images/films/sonOfGod/gallery_4.jpeg'
 
 const responsive = {
   superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
+    breakpoint: { max: 4000, min: 2000 },
     items: 5,
   },
   desktop: {
@@ -27,8 +27,8 @@ const responsive = {
     items: 2.5,
   },
   mobile: {
-    breakpoint: { max: 1299, min: 0 },
-    items: 2,
+    breakpoint: { max: 1299, min: 501 },
+    items: 1.5,
   },
   mobileMobile: {
     breakpoint: { max: 500, min: 0 },
@@ -40,8 +40,8 @@ const Films = () => {
   return (
     <section className='py-10 text-[#9B9B9B]'>
       <h1 className='text-[30px]'>Найкращі фільми</h1>
-      <div className='mt-10 flex flex-col lg:flex-row gap-10'>
-        <div className='lg:w-1/2 h-full flex flex-col gap-5'>
+      <div className='mt-10 flex flex-col gap-10'>
+        <div className='h-full flex flex-col gap-5'>
           <iframe
             className='h-[500px] rounded-[10px]'
             scrolling='no'
@@ -53,10 +53,10 @@ const Films = () => {
           ></iframe>
           <div className='mt-10 text-justify'>
             <Carousel responsive={responsive} className='flex gap-5'>
-              <Image className='h-[300px] w-[400px] rounded-[8px]' src={GalleryImageFive} alt='Image 1' />
-              <Image className='h-[300px] w-[400px] rounded-[8px]' src={GalleryImageSix} alt='Image 2' />
-              <Image className='h-[300px] w-[400px] rounded-[8px]' src={GalleryImageSeven} alt='Image 3' />
-              <Image className='h-[300px] w-[400px] rounded-[8px]' src={GalleryImageEight} alt='Image 4' />
+              <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageFive} alt='Image 1' />
+              <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageSix} alt='Image 2' />
+              <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageSeven} alt='Image 3' />
+              <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageEight} alt='Image 4' />
             </Carousel>
             <h3 className='my-5 text-[30px]'>Про що фільм "Страсті Христові":</h3>
             <p className=''>
@@ -73,7 +73,7 @@ const Films = () => {
             </p>
           </div>
         </div>
-        <div className='lg:w-1/2 h-full flex flex-col gap-5'>
+        <div className='h-full flex flex-col gap-5'>
           <iframe
             className='h-[500px] rounded-[10px]'
             scrolling='no'
@@ -85,10 +85,10 @@ const Films = () => {
           ></iframe>
           <div className='mt-10 text-justify'>
             <Carousel responsive={responsive} className='flex gap-5'>
-              <Image className='h-[300px] w-[400px] rounded-[8px]' src={GalleryImageOne} alt='Image 1' />
-              <Image className='h-[300px] w-[400px] rounded-[8px]' src={GalleryImageTwo} alt='Image 2' />
-              <Image className='h-[300px] w-[400px] rounded-[8px]' src={GalleryImageThree} alt='Image 3' />
-              <Image className='h-[300px] w-[400px] rounded-[8px]' src={GalleryImageFour} alt='Image 4' />
+              <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageOne} alt='Image 1' />
+              <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageTwo} alt='Image 2' />
+              <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageThree} alt='Image 3' />
+              <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageFour} alt='Image 4' />
             </Carousel>
             <h3 className='my-5 text-[30px]'>Про що фільм "Син Божий":</h3>
             <p className=''>

@@ -5,6 +5,10 @@ export const PAGE_SLUGS = {
 
   films: '/films',
 
+  photos: '/photos',
+
+  sermons: '/sermons',
+
   // Not-Found
   notFound: '*',
 }

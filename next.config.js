@@ -19,14 +19,7 @@ const nextConfig = {
 
   // Images link correct
   images: {
-    remotePatterns: [
-      // {
-      //     protocol: 'https',
-      //     hostname: 'i.dummyjson.com',
-      //     port: '',
-      //     pathname: '/data/products/**'
-      // }
-    ],
+    domains: ['images.unsplash.com'],
   },
 }
 

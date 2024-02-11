@@ -2,8 +2,8 @@ import cn from 'classnames'
 import { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 
-import CookieBanner from '@components/CookieBanner'
-import GoogleAnalytics from '@components/GoogleAnalytics'
+import GoogleAnalytics from '@components/Analytics/GoogleAnalytics'
+import CookieBanner from '@components/CookieBanner/CookieBanner'
 import Header from '@components/Header/Header'
 import '@styles/globals.scss'
 

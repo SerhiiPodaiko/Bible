@@ -1,7 +1,8 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
 import { PAGE_SLUGS } from '@constants/pages'
 import NotFoundImage from '@public/images/404/404.avif'
-import Image from 'next/image'
-import Link from 'next/link'
 
 export default function NotFound() {
   return (
@@ -10,12 +11,20 @@ export default function NotFound() {
         <h2>Не знайдено</h2>
         <p>Не вдалося знайти запитуваний ресурс</p>
         <Image src={NotFoundImage} className='self-center rounded' alt='404' />
-        <Link
-          href={PAGE_SLUGS.home}
-          className='py-2 px-3 rounded bg-[#5DE4A9] self-center hover:scale-[0.98] duration-300'
-        >
-          На головну
-        </Link>
+        <div className='flex items-center justify-center gap-2'>
+          <Link
+            href={PAGE_SLUGS.home}
+            className='py-2 px-3 rounded bg-[#5DE4A9] self-center hover:scale-[0.98] duration-300'
+          >
+            На головну
+          </Link>
+          <a
+            href="javascript:window.location.reload(true)"
+            className='py-2 px-3 rounded bg-[#5DE4A9] self-center hover:scale-[0.98] duration-300'
+          >
+              Спробувати ще раз
+          </a>
+        </div>
       </div>
     </div>
   )

@@ -25,7 +25,7 @@
       "@hooks/*": ["hooks/*"],
       "@public/*": ["public/*"],
       "@styles/*": ["styles/*"],
-      "@store/*": ["store/*"],
+      "@pages/*": ["pages/*"],
       "@lib/*": ["lib/*"],
       "@ui/*": ["ui/*"],
       "@constants/*": ["constants/*"],
