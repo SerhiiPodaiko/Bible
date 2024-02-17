@@ -20,7 +20,7 @@ const Header = () => {
   useEffect(() => setMenuStatus(false), [pathname])
 
   return (
-    <header className='fixed top-0 right-0 left-0 w-full flex items-center justify-between py-4 px-[20px] lg:px-20 bg-[#047E6E] z-40'>
+    <header className='relative flex items-center justify-between py-4 px-[20px] z-10'>
       <div className='flex items-center gap-3'>
         <Link href={PAGE_SLUGS.home} title='Лого'>
           <LogoSvg />

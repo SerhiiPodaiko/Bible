@@ -3,7 +3,7 @@
 // NEXT_ACCESS_KEY=TfC295-zb75dhrMiGF92KL9p32eSfDirnrm-7QgF3IU
 // NEXT_SECRET_KEY=618QqMwJWVfuflB-h_fmAWgpdEDbS3vvvJGdEqDd0pw
 
-export const fetchGetRandomPhotos = async (count:number = 3, query:string = 'bible') => {
+export const fetchGetRandomPhotos = async (count:number = 3, query:string = 'Christ') => {
   try {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/photos/random/?client_id=TfC295-zb75dhrMiGF92KL9p32eSfDirnrm-7QgF3IU&count=${count}&query=${query}`

@@ -42,14 +42,14 @@ const GalleryItem = ({ photos }: { photos: any }) => {
       </div>
       <div className='flex justify-center items-center gap-2'>
         <input
-          type='text'
+          type='search'
           value={query}
           onChange={e => setQuery(e.target.value)}
-          className='p-2 text-[#C46529] border border-[#C46529] outline-none rounded'
+          className='p-2 text-[#047E6E] border-b border-[#047E6E] outline-none placeholder:text-[#047E6E]'
           placeholder='Що шукаєте?'
         />
         <button
-          className='self-center py-2 px-3 border-2 border-transparent bg-[#C46529] hover:text-white hover:border-white
+          className='self-center py-2 px-3 border-2 border-transparent bg-[#047E6E] hover:text-white hover:border-white
           rounded duration-300 disabled:bg-gray-500'
           type='button'
           disabled={!query}

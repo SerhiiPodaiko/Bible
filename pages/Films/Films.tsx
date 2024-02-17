@@ -38,9 +38,8 @@ const responsive = {
 
 const Films = () => {
   return (
-    <section className='py-10 text-[#9B9B9B]'>
-      <h1 className='text-[30px]'>Найкращі фільми</h1>
-      <div className='mt-10 flex flex-col gap-10'>
+    <section className='relative py-10 text-[#9B9B9B] z-30'>
+      <div className='mt-10 px-32 flex flex-col gap-10'>
         <div className='h-full flex flex-col gap-5'>
           <iframe
             className='h-[500px] rounded-[10px]'
@@ -58,8 +57,8 @@ const Films = () => {
               <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageSeven} alt='Image 3' />
               <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageEight} alt='Image 4' />
             </Carousel>
-            <h3 className='my-5 text-[30px]'>Про що фільм "Страсті Христові":</h3>
-            <p className=''>
+            <h3 className='text-white my-5 text-[30px]'>Про що фільм "Страсті Христові":</h3>
+            <p className='text-white'>
               Фільм «Страсті Христові» розповідає про останні дні життя Божого Сина. Зраджений одним зі своїх учнів,
               Іудою, Ісус виявляється захопленим солдатами під час молитви. Він зупиняє своїх послідовників, які мають
               намір вступити в бій з охороною і відправляється на суд. Понтій Пілат має намір провести процедуру за
@@ -90,8 +89,8 @@ const Films = () => {
               <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageThree} alt='Image 3' />
               <Image className='h-[300px] w-[100%] rounded-[8px]' src={GalleryImageFour} alt='Image 4' />
             </Carousel>
-            <h3 className='my-5 text-[30px]'>Про що фільм "Син Божий":</h3>
-            <p className=''>
+            <h3 className='text-white my-5 text-[30px]'>Про що фільм "Син Божий":</h3>
+            <p className='text-white'>
               Чергова інтерпретація біблійної "історії" Ісуса Христа втілена в кінофільмі "Син Божий". Це нове бачення
               всіх подій, які супроводжували життєвий шлях Ісуса Христа, від моментів Його появи на Землі і моментів
               Його Вознесіння. Цікавий погляд режисера Крістофера Спенсера дозволяє подивитися вглиб цієї легенди. Коли
