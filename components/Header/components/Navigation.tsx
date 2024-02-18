@@ -18,7 +18,7 @@ const Navigation = () => {
   const pathname = usePathname()
 
   return (
-    <nav className='flex-col lg:flex-row flex items-center gap-5'>
+    <nav className='flex items-center gap-2 lg:gap-5 flex-wrap lg:flex-nowrap'>
       <a
         target='_blank'
         href='https://www.bible.com/bible/188/MAT.1.UKRK'

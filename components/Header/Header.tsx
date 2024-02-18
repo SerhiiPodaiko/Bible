@@ -1,26 +1,19 @@
 'use client'
-import cn from 'classnames'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
 import { PAGE_SLUGS } from '@constants/pages'
 import LogoSvg from '@public/icons/logo.svg'
-import MenuCloseSvg from '@public/icons/menu-close.svg'
-import MenuSvg from '@public/icons/menu.svg'
 import { usePathname, useRouter } from 'next/navigation'
 import Navigation from './components/Navigation'
 
 const Header = () => {
-  const [menuStatus, setMenuStatus] = useState<boolean>(false)
   const isTablet = useMediaQuery({ maxWidth: 1023 })
   const router = useRouter()
   const pathname = usePathname()
 
-  useEffect(() => setMenuStatus(false), [pathname])
-
   return (
-    <header className='relative flex items-center justify-between py-4 px-[20px] z-10'>
+    <header className='relative flex items-center flex-col gap-4 lg:gap-0 lg:flex-row justify-between py-4 px-[20px] z-20'>
       <div className='flex items-center gap-3'>
         <Link href={PAGE_SLUGS.home} title='Лого'>
           <LogoSvg />
@@ -32,21 +25,7 @@ const Header = () => {
           Тут шукають Бога
         </h1>
       </div>
-      <div
-        className={cn(
-          'flex items-center gap-10 duration-300',
-          isTablet
-            ? menuStatus
-              ? 'fixed top-0 left-0 h-screen flex-col justify-center items-center z-50 w-full bg-[#047E6E]'
-              : 'hidden'
-            : ''
-        )}
-      >
-        <Navigation />
-      </div>
-      <div className='flex lg:hidden z-50' onClick={() => setMenuStatus(prevStatus => !prevStatus)}>
-        {menuStatus ? <MenuCloseSvg /> : <MenuSvg />}
-      </div>
+      <Navigation />
     </header>
   )
 }

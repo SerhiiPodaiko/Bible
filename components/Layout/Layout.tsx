@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const homePath = pathname === PAGE_SLUGS.home
 
   return (
-    <div className={cn('relative', pathname === PAGE_SLUGS.home ? 'h-screen flex justify-center items-center' : '')}>
+    <div className={cn('relative', homePath ? 'h-screen flex justify-center items-center' : '')}>
       { !homePath && <Header />  }
       <Image
         src={HeroImage}
