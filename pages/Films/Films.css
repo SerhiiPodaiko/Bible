@@ -1,12 +1,16 @@
 ul {
+    position: relative;
     display: flex;
     gap: 20px;
+    height: 100%;
 }
 
-li {
-    transition: width .3s ease;
+.react-multiple-carousel__arrow {
+    position: absolute;
+    background: #C46529;
+    margin-top: 50px;
+    height: 70px;
+    width: 70px;
+    top: 0;
 }
 
-li:hover {
-    width: 400px!important;
-}
