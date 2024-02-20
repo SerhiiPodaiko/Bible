@@ -29,11 +29,11 @@ const responsiveScreen = {
 
 const Films = () => {
   return (
-    <section className='relative p-10 text-[#9B9B9B] z-30'>
+    <section className='relative p-2 lg:p-10 text-[#9B9B9B] '>
       <Carousel responsive={responsiveScreen}>
         <div className='flex flex-col'>
             <iframe
-              className='h-[50vh]'
+              className='h-[50vh] rounded-[10px]'
               scrolling='no'
               src='https://ashdi.vip/vod/79265?'
               frameBorder='0'
@@ -42,7 +42,7 @@ const Films = () => {
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;'
             ></iframe>
 
-          <div className='h-[50vh]'>
+          <div className='h-[50vh] overflow-y-auto'>
             <h3 className='text-white my-5 text-[30px]'>Про що фільм "Страсті Христові":</h3>
             <p className='text-white'>
               Фільм «Страсті Христові» розповідає про останні дні життя Божого Сина. Зраджений одним зі своїх учнів,
@@ -74,7 +74,7 @@ const Films = () => {
             frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;'
           ></iframe>
-          <div className='h-[50vh] mt-10 text-justify'>
+          <div className='h-[50vh] mt-10 text-justify overflow-y-auto'>
             <h3 className='text-white my-5 text-[30px]'>Про що фільм "Син Божий":</h3>
             <p className='text-white'>
               Чергова інтерпретація біблійної "історії" Ісуса Христа втілена в кінофільмі "Син Божий". Це нове бачення
