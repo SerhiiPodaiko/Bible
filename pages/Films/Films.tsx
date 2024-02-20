@@ -1,40 +1,8 @@
 'use client'
-import Image from 'next/image'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import './Films.css'
 
-import GalleryImageFive from '@public/images/films/assionOfChrist/gallery_1.jpeg'
-import GalleryImageSix from '@public/images/films/assionOfChrist/gallery_2.jpeg'
-import GalleryImageSeven from '@public/images/films/assionOfChrist/gallery_3.jpeg'
-import GalleryImageEight from '@public/images/films/assionOfChrist/gallery_4.jpeg'
-import GalleryImageOne from '@public/images/films/sonOfGod/gallery_1.png'
-import GalleryImageTwo from '@public/images/films/sonOfGod/gallery_2.png'
-import GalleryImageThree from '@public/images/films/sonOfGod/gallery_3.png'
-import GalleryImageFour from '@public/images/films/sonOfGod/gallery_4.jpeg'
-
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 2000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1800 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1799, min: 1300 },
-    items: 2.5,
-  },
-  mobile: {
-    breakpoint: { max: 1299, min: 501 },
-    items: 1.5,
-  },
-  mobileMobile: {
-    breakpoint: { max: 500, min: 0 },
-    items: 1,
-  },
-}
 
 const responsiveScreen = {
   superLargeDesktop: {
