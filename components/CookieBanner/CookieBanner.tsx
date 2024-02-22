@@ -1,5 +1,5 @@
 'use client'
-import { getLocalStorage, setLocalStorage } from '@lib/storageHelper'
+import { getLocalStorage, setLocalStorage } from '@lib/google-analytics/storageHelper'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 export default function CookieBanner() {

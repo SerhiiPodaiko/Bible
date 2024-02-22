@@ -1,5 +1,5 @@
 'use client'
-import { pageview } from '@lib/gtagHelper'
+import { pageview } from '@lib/google-analytics/gtagHelper'
 import { usePathname, useSearchParams } from 'next/navigation'
 import Script from 'next/script'
 import { useEffect } from 'react'

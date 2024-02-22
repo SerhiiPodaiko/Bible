@@ -9,7 +9,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
   }, [error])
 
   return (
-    <div className='mt-5 p-5 flex flex-col gap-5 border border-[#63A59B] rounded'>
+    <div className='relative mt-5 p-5 flex flex-col gap-5 border border-[#63A59B] rounded z-50'>
       <h2>{error ? error.message : 'Щось пішло не так!'}</h2>
       <Image src={NotFoundImage} className='self-center rounded' alt='404' />
       <button

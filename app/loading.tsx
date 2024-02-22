@@ -1,3 +1,5 @@
+import LoadingUI from '@ui/Loading/LoadingUI'
+
 export default function Loading() {
-  return <h1>Loading..</h1>
+  return <LoadingUI />
 }

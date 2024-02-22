@@ -1,19 +1,17 @@
 'use client'
 import Link from 'next/link'
-import { useMediaQuery } from 'react-responsive'
+import { useRouter } from 'next/navigation'
 
 import { PAGE_SLUGS } from '@constants/pages'
 import LogoSvg from '@public/icons/logo.svg'
-import { usePathname, useRouter } from 'next/navigation'
 import Navigation from './components/Navigation'
 
 const Header = () => {
-  const isTablet = useMediaQuery({ maxWidth: 1023 })
   const router = useRouter()
-  const pathname = usePathname()
 
   return (
-    <header className='relative flex items-center flex-col gap-4 lg:gap-0 lg:flex-row justify-between py-4 px-[20px] z-20'>
+    <header className='relative flex items-center flex-col gap-4 lg:gap-0 lg:flex-row justify-between py-4 px-[20px] z-20'
+    >
       <div className='flex items-center gap-3'>
         <Link href={PAGE_SLUGS.home} title='Лого'>
           <LogoSvg />

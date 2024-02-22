@@ -13,11 +13,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const homePath = pathname === PAGE_SLUGS.home
 
   return (
-    <div className={cn('relative', homePath ? 'h-screen flex justify-center items-center' : '')}>
+    <div className={cn('min-h-screen relative overflow-y-hidden', homePath && 'flex justify-center items-center')}>
       { !homePath && <Header />  }
       <Image
         src={HeroImage}
-        className='absolute h-full top-0 bottom-0 left-0 right-0 opacity-70'
+        className='top-0 bottom-0 left-0 h-full right-0 absolute  opacity-70'
         alt='Hero'
       />
       {children}
