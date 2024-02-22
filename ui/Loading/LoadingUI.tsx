@@ -1,4 +1,4 @@
-import './LoadingUI.scss'
+import './LoadingUI.css'
 
 const LoadingUI = () => (
   <div className='flex justify-center'>

@@ -3,9 +3,10 @@ import { useState } from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
-import ArrowRight from '@public/arrow-right.svg'
 import './Films.css'
 import { FILMS_DATA } from './data'
+import LoadingUI from '@ui/Loading/LoadingUI'
+import ArrowRight from '@public/arrow-right.svg'
 
 const responsiveScreen = {
   superLargeDesktop: {
@@ -37,7 +38,7 @@ const Films = () => {
     <section className='relative p-2 lg:p-10 text-[#9B9B9B] overscroll-y-auto'>
       <Carousel responsive={responsiveScreen}>
         {
-          FILMS_DATA.map(film => (
+          FILMS_DATA?.map(film => (
             <div className='flex flex-col' key={film.id}>
               <iframe
                 className='h-[60vh] rounded-[10px]'
@@ -64,6 +65,7 @@ const Films = () => {
             </div>
           ))
         }
+        { !FILMS_DATA && <LoadingUI /> }
       </Carousel>
     </section>
   )

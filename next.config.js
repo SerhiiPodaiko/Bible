@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
-const path = require('path')
 
 const nextConfig = {
   // reactStrictMode: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
 
   // SVG
   webpack(config) {
@@ -15,12 +11,7 @@ const nextConfig = {
     })
 
     return config
-  },
-
-  // Images link correct
-  images: {
-    domains: ['images.unsplash.com'],
-  },
+  }
 }
 
 module.exports = nextConfig
