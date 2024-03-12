@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
 import './Films.css'
-import { FILMS_DATA } from './data'
+import { FILMS_DATA } from '../../makeData/filmsData'
 import LoadingUI from '@ui/Loading/LoadingUI'
 import ArrowRight from '@public/arrow-right.svg'
 

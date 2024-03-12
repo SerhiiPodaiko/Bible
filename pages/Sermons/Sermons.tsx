@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { SERMONS_DATA } from '@pages/Sermons/data'
+import { SERMONS_DATA } from '../../makeData/sermonsData'
 
 const Sermons = () => {
   return (
