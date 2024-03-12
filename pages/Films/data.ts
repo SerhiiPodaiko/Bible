@@ -1,6 +1,5 @@
 import randomId from '@utils/randomId'
 
-
 export const FILMS_DATA = [
   {
     title: 'Страсті Христові',

@@ -1,12 +1,5 @@
 /** @type {import('next').NextConfig} */
-const path = require('path')
-
 const nextConfig = {
-  // reactStrictMode: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
-
   // SVG
   webpack(config) {
     config.module.rules.push({
@@ -15,11 +8,6 @@ const nextConfig = {
     })
 
     return config
-  },
-
-  // Images link correct
-  images: {
-    domains: ['images.unsplash.com'],
   },
 }
 
