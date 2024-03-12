@@ -6,7 +6,7 @@ const Sermons = () => {
   return (
     <section className='relative z-30 py-5 text-[#047E6E] p-5'>
       <main className='py-5'>
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 col-1 gap-5'>
           {
            SERMONS_DATA?.map(sermon => (
              <div key={sermon.id}

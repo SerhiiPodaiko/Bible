@@ -43,7 +43,7 @@ const Films = () => {
               <iframe
                 className='h-[60vh] rounded-[10px]'
                 scrolling='no'
-                src='https://ashdi.vip/vod/79265?'
+                src={film.src}
                 frameBorder='0'
                 width='100%'
                 height='100%'
@@ -53,7 +53,7 @@ const Films = () => {
               <div className=''>
                 <h3 className='text-white my-5 text-[30px]'>Про що фільм "{film.title}":</h3>
                 <div className='flex flex-col p-4 text-black bg-white rounded-[10px] opacity-70 text-[14px] lg:text-[20px] duration-300'>
-                  <p>{ statusDescription ? film.description :  film.description.slice(0, 300)}</p>
+                  <p>{ statusDescription ? film.description :  film.description.slice(0, 300) + '...'}</p>
                   <div
                     className='w-[45px] h-[45px] flex items-center justify-center bg-yellow-500 rounded-full cursor-pointer duration-300 hover:translate-y-3'
                     onClick={() => setStatusDescription(prev => !prev)}

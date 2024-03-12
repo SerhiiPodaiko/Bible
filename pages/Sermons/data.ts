@@ -17,7 +17,7 @@ export const SERMONS_DATA = [
     videoPreview: 'https://www.youtube.com/@GalileaUkraine/playlists'
   },
   {
-    title: 'Свяшенник Василь Колодій',
+    title: 'Священник Василь Колодій',
     image: sermon3,
     id: randomId(),
     videoPreview: 'https://www.youtube.com/@andrijmackiv7503/videos'
